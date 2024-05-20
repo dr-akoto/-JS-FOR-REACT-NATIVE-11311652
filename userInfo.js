@@ -14,13 +14,13 @@ function createUserProfiles(originalNames, modifiedNames) {
     // Initialize an empty array to store user profile objects
     const userProfiles = [];
   
-    // Iterate over the input arrays using the forEach method
+    // Iterate over the arrays in the input using the forEach method
     originalNames.forEach((name, index) => {
       // Create a user profile object with originalName, modifiedName, and id
       const userProfile = {
         originalName: name,
         modifiedName: modifiedNames[index],
-        id: index + Math.floor(Math.random()* (7-2) + 2), // Auto-increment id starting from 1
+        id: index + Math.floor(Math.random()* (3-1) + 1), // Auto-increment id starting from 1
       };
   
       // Push the user profile object to the userProfiles array
